@@ -1,0 +1,152 @@
+#app{
+	background: #F0C27B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:white;
+	min-height:500px;
+	font-family: 'Verdana';
+}
+
+.main-app{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.app-title{
+	font-size: 40px;
+	text-align: center;
+	margin-top:15px;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+.labels{
+	text-transform: uppercase;
+}
+
+.task-input, .task-deadline-input, .add-task-button{
+	margin-top:15px;
+}
+
+.task-input-form, .task-deadline-input-form{
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.add-task-button{
+	margin-top:35px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	border:1px solid white;
+}
+
+.add-task-button:hover{
+	margin-top:36px;
+}
+
+.error-msg{
+	margin:25px auto;
+	padding: 5px 5px;
+	background-color: white;
+	border:1px solid red;
+}
+
+.error-msg, .error-msg:focus{
+	color:red;
+}
+
+.remove-all-tasks-button{
+	vertical-align: bottom;
+	margin:0 auto;
+	margin-bottom: 25px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	border:1px solid white;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.task-list-container{
+	margin:0 auto;
+	margin-top:25px;
+}
+
+.task-list{
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.task{
+	color:black;
+	height:40px;
+	padding:5px;
+	border:1px solid #a6a6a6;
+}
+
+.task:hover{
+	border:1px solid white;
+	background-color:#a6a6a6;
+	color:white;
+}
+
+.task-name, .task-date, .remove-task-button{
+	display: inline;
+}
+
+.task > div:nth-of-type(1){
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+.task-name{
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	max-width: 84%;
+	font-size:20px;
+	float: left;
+}
+
+.task-date{
+	font-size:13px;
+	margin-top:3px;
+	text-align: right;
+	float: right;
+}
+
+.remove-task-button{
+	float:right;
+	text-align: right;
+	font-size: 20px;
+	color:red;
+	font-weight: bold;
+	margin-left:20px;
+	-webkit-transition: -webkit-transform 0.6s ease-in-out;
+	transition: -webkit-transform 0.6s ease-in-out;
+}
+
+.remove-task-button:hover{
+	cursor: pointer;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 768px) and (max-width:1020px){
+	.labels{
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.add-task-button{
+		margin-top:20px;
+	}
+	.task-date{
+		display: none;
+	}
+}
+
+@media only screen and (min-width:768px){
+	.error-msg-row{
+		margin-left: 7.5%;
+	}
+}
