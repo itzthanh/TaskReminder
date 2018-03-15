@@ -4,4 +4,6 @@ React application where users enter in a task along with the due date and is add
 
 source code is included in /src/
 
+Edit: After uploading, it appears that my CSS broke and at the moment I have not figured out the cause.
+
 https://itzthanh.github.io/TaskReminder/index.html
